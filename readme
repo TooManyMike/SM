@@ -1,2 +1,10 @@
-# SM
-Chinese government officially recommended encryption and hash algorithms for commercial purpose
+SM2: asymmetric encryption algorithm based on ECC, including encryption and digital signature processes
+
+SM3: hash algorithm
+
+SM4: symmetric encryption algorithm
+
+Random numbers are needed when applying SM2, and in most cases, we don't have a hardware random number generator. 
+Thus I wrote 'rand.cpp' for random numbers gereration. 
+The main idea is that the increment of CPU time stamp between your two accesses is unpredictable.
+Hopefully, unlike other pseudo-random number generators, this one is quite random.
